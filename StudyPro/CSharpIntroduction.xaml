@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudyPro.CSharpIntroduction"
+             Title="Структура программы">
+    <ScrollView>
+        <StackLayout BackgroundColor="#282828">
+            <Label Text="Видеоурок" HorizontalOptions="Center" TextColor="Black"/>
+            <WebView x:Name="youtubeWebView" Source="https://www.youtube.com/embed/JTn3m-8eMx4?si=nJKjdbdwCsPj4KU7" WidthRequest="400" HeightRequest="190" MinimumWidthRequest="400" MinimumHeightRequest="190"/>
+            <Label Text="теоретический материал" HorizontalOptions="Center" TextColor="Black"/>
+            <WebView x:Name="textWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button Text="завершить" TextColor="Black" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="OnOpenCSarpCliked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

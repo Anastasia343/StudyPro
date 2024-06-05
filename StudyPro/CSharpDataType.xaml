@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudyPro.CSharpDataType"
+             Title="Литералы и Типы данных">
+    <ScrollView>
+        <StackLayout BackgroundColor="White">
+            <Label Text="Видеоурок" HorizontalOptions="Center" TextColor="Black"/>
+            <WebView Source="https://www.youtube.com/embed/fNjVCSEXpDM?si=0dKzm1RTDp3NWvLp" WidthRequest="400" HeightRequest="190" MinimumWidthRequest="400" MinimumHeightRequest="190"/>
+            <Label Text="теоретический материал" HorizontalOptions="Center" TextColor="Black"/>
+            <WebView x:Name="textWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+            <Label Text="Задание 1" HorizontalOptions="Center" TextColor="Black"/>
+            <WebView x:Name="oneAnswerWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="oneAnswerEntry" Placeholder="Ваш ответ" TextColor="Black"/>
+            <Label x:Name="oneErrorLabel" Text=""/>
+            <Button Text="Ответить" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="OneAnswerButton"/>
+
+            <Label Text="Задание 2" HorizontalOptions="Center" TextColor="Black"/>
+            <WebView x:Name="twoAnswerWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="twoAnswerEntry" Placeholder="Ваш ответ" TextColor="Black"/>
+            <Label x:Name="twoErrorLabel" Text=""/>
+            <Button Text="Ответить" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="TwoAnswerButton"/>
+
+            <Label Text="Задание 3" HorizontalOptions="Center" TextColor="Black"/>
+            <WebView x:Name="threeAnswerWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="threeAnswerEntry" Placeholder="Ваш ответ" TextColor="Black"/>
+            <Label x:Name="threeErrorLabel" Text=""/>
+            <Button Text="Ответить" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="ThreeAnswerButton"/>
+
+            <Button Text="завершить" TextColor="Black" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="OnOpenCSarpCliked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudyPro.MainPage"
+             Title="Главная">
+    <StackLayout BackgroundColor="#282828">
+        <Label Text="Доступные курсы" HorizontalOptions="Center" TextColor="#ACACAC" Margin="70, 20, 70, 20"/>
+        <Button Text="C#" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickOne" Margin="90, 0, 90, 0"/>
+        <Label Text="Скоро новые курсы" HorizontalOptions="Center" TextColor="#ACACAC" Margin="70, 80, 70, 20"/>
+        <Button Text="C++" TextColor="Black" BackgroundColor="#ac99ea" Margin="90, 0, 90, 20"/>
+        <Button Text="Python" TextColor="Black" BackgroundColor="#ac99ea" Margin="90, 0, 90, 0"/>
+    </StackLayout>
+</ContentPage>
