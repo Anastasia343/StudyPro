@@ -5,9 +5,9 @@
              Title="Главная">
     <StackLayout BackgroundColor="#282828">
         <Label Text="Доступные курсы" HorizontalOptions="Center" TextColor="#ACACAC" Margin="70, 20, 70, 20"/>
-        <Button Text="C#" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickOne" Margin="90, 0, 90, 0"/>
+        <Button Text="C#" TextColor="Black" BackgroundColor="#ac99ea" Margin="90, 0, 90, 0" Clicked="ButtonClickOne"/>
         <Label Text="Скоро новые курсы" HorizontalOptions="Center" TextColor="#ACACAC" Margin="70, 80, 70, 20"/>
-        <Button Text="C++" TextColor="Black" BackgroundColor="#ac99ea" Margin="90, 0, 90, 20"/>
-        <Button Text="Python" TextColor="Black" BackgroundColor="#ac99ea" Margin="90, 0, 90, 0"/>
+        <Button Text="C++" TextColor="Black" BackgroundColor="#ac99ea" Margin="90, 0, 90, 20" Clicked="ButtonClickTwo"/>
+        <Button Text="Python" TextColor="Black" BackgroundColor="#ac99ea" Margin="90, 0, 90, 0" Clicked="ButtonClickThree"/>
     </StackLayout>
 </ContentPage>

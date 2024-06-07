@@ -4,31 +4,31 @@
              x:Class="StudyPro.CSharpTransformationsBasicData"
              Title="Преобразования базовых типов данных">
     <ScrollView>
-        <StackLayout BackgroundColor="White">
-            <Label Text="Видеоурок" HorizontalOptions="Center" TextColor="Black"/>
+        <StackLayout BackgroundColor="#282828">
+            <Label Text="Видеоурок" HorizontalOptions="Center" TextColor="#ACACAC" Margin="70, 20, 70, 20"/>
             <WebView Source="https://www.youtube.com/embed/cfoec_hRfPU?si=dR5GqCHKx-K1lRMW" WidthRequest="400" HeightRequest="190" MinimumWidthRequest="400" MinimumHeightRequest="190"/>
-            <Label Text="теоретический материал" HorizontalOptions="Center" TextColor="Black"/>
-            <WebView x:Name="textWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Label Text="теоретический материал" HorizontalOptions="Center" TextColor="#ACACAC" Margin="0, 20, 0, 0"/>
+            <WebView x:Name="textWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#282828" WidthRequest="400" HeightRequest="2770" MinimumWidthRequest="400" MinimumHeightRequest="2770"/>
 
-            <Label Text="Задание 1" HorizontalOptions="Center" TextColor="Black"/>
-            <WebView x:Name="oneAnswerWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Entry x:Name="oneAnswerEntry" Placeholder="Ваш ответ" TextColor="Black"/>
+            <Label Text="Задание 1" HorizontalOptions="Center" TextColor="#ACACAC" Margin="0, 40, 0, 0"/>
+            <WebView x:Name="oneAnswerWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#282828" WidthRequest="400" HeightRequest="180" MinimumWidthRequest="400" MinimumHeightRequest="180"/>
+            <Entry x:Name="oneAnswerEntry" Placeholder="Ваш ответ" TextColor="#ACACAC"/>
             <Label x:Name="oneErrorLabel" Text=""/>
             <Button Text="Ответить" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="OneAnswerButton"/>
 
-            <Label Text="Задание 2" HorizontalOptions="Center" TextColor="Black"/>
-            <WebView x:Name="twoAnswerWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Entry x:Name="twoAnswerEntry" Placeholder="Ваш ответ" TextColor="Black"/>
+            <Label Text="Задание 2" HorizontalOptions="Center" TextColor="#ACACAC" Margin="0, 40, 0, 0"/>
+            <WebView x:Name="twoAnswerWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#282828" WidthRequest="400" HeightRequest="180" MinimumWidthRequest="400" MinimumHeightRequest="180"/>
+            <Entry x:Name="twoAnswerEntry" Placeholder="Ваш ответ" TextColor="#ACACAC"/>
             <Label x:Name="twoErrorLabel" Text=""/>
             <Button Text="Ответить" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="TwoAnswerButton"/>
 
-            <Label Text="Задание 3" HorizontalOptions="Center" TextColor="Black"/>
-            <WebView x:Name="threeAnswerWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Entry x:Name="threeAnswerEntry" Placeholder="Ваш ответ" TextColor="Black"/>
+            <Label Text="Задание 3" HorizontalOptions="Center" TextColor="#ACACAC" Margin="0, 40, 0, 0"/>
+            <WebView x:Name="threeAnswerWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#282828" WidthRequest="400" HeightRequest="180" MinimumWidthRequest="400" MinimumHeightRequest="180"/>
+            <Entry x:Name="threeAnswerEntry" Placeholder="Ваш ответ" TextColor="#ACACAC"/>
             <Label x:Name="threeErrorLabel" Text=""/>
             <Button Text="Ответить" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="ThreeAnswerButton"/>
 
-            <Button Text="завершить" TextColor="Black" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="OnOpenCSarpCliked"/>
+            <Button Text="завершить" TextColor="Black" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="OnOpenCSarpCliked" Margin="0, 40, 0, 0"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

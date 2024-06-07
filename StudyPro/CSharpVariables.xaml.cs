@@ -21,6 +21,7 @@ public partial class CSharpVariables : ContentPage
                 font-size: 16px;
                 text-align: justify;
                 padding: 10px;
+                color:#ACACAC;
             }
         </style>
         </head>
@@ -86,6 +87,7 @@ public partial class CSharpVariables : ContentPage
                 font-size: 16px;
                 text-align: justify;
                 padding: 10px;
+                color:#ACACAC;
             }
         </style>
         </head>
@@ -139,6 +141,7 @@ public partial class CSharpVariables : ContentPage
                 font-size: 16px;
                 text-align: justify;
                 padding: 10px;
+                color:#ACACAC;
             }
         </style>
         </head>
@@ -189,6 +192,7 @@ public partial class CSharpVariables : ContentPage
                 font-size: 16px;
                 text-align: justify;
                 padding: 10px;
+                color:#ACACAC;
             }
         </style>
         </head>

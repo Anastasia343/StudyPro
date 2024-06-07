@@ -21,6 +21,7 @@ public partial class CSharpCycles : ContentPage
                 font-size: 16px;
                 text-align: justify;
                 padding: 10px;
+                color:#ACACAC;
             }
         </style>
         </head>
@@ -120,17 +121,17 @@ public partial class CSharpCycles : ContentPage
                 font-size: 16px;
                 text-align: justify;
                 padding: 10px;
+                color:#ACACAC;
             }
         </style>
         </head>
         <body>
-            <p>Какие из следующих вариантов представляют корректное определение переменных:</p>
-             <ol>
-                 <li>string person = ""Tom"";</li>
-                 <li>person = ""Tom"";</li>
-                 <li>string person;</li>
-                 <li>string ""Tom"";</li>
-             </ol> 
+            <p>Сколько раз выполнится следующий цикл:<br><br>int i = 5;<br>
+            while(i > 0)<br>
+            {<br>
+                i *= 3;<br>
+                i *= -1;<br>
+            }</p>
         </body>
         </html>";
 
@@ -141,17 +142,7 @@ public partial class CSharpCycles : ContentPage
     }
     private void OneAnswerButton(object sender, EventArgs e)
     {
-        if (oneAnswerEntry.Text == "13")
-        {
-            oneErrorLabel.Text = "Верно!";
-            oneErrorLabel.TextColor = Colors.Green;
-        }
-        else if (oneAnswerEntry.Text == "1 3")
-        {
-            oneErrorLabel.Text = "Верно!";
-            oneErrorLabel.TextColor = Colors.Green;
-        }
-        else if (oneAnswerEntry.Text == "1,3")
+        if (oneAnswerEntry.Text == "1")
         {
             oneErrorLabel.Text = "Верно!";
             oneErrorLabel.TextColor = Colors.Green;
@@ -173,19 +164,28 @@ public partial class CSharpCycles : ContentPage
                 font-size: 16px;
                 text-align: justify;
                 padding: 10px;
+                color:#ACACAC;
             }
         </style>
         </head>
         <body>
 
-            <p>Что выведет на консоль следующий код:<br>string person = ""Tom"";<br>
-            person = ""Sam"";<br>
-            Console.WriteLine(person);</p>
+            <p>Что будет выведено на консоль в результате выполнения следующего цикла:<br><br>for(int i = 1; i < 3; i++)<br>
+            {<br>
+                switch (i)<br>
+                {<br>
+                    default:<br>
+                        Console.WriteLine($""i = {i++}"");<br>
+                        break;<br>
+                }<br>
+            }</p>
             <ol>
-                 <li>Tom</li>
-                 <li>Sam</li>
-                 <li>person</li>
-             </ol>
+                 <li>Программа не скомпилируется</li>
+                 <li>Ничего не будет выведено на консоль</li>
+                 <li>i = 1</li>
+                 <li>i = 1<br>
+                 i = 2</li>
+            </ol>
         </body>
         </html>";
 
@@ -196,12 +196,7 @@ public partial class CSharpCycles : ContentPage
     }
     private void TwoAnswerButton(object sender, EventArgs e)
     {
-        if (twoAnswerEntry.Text == "Sam")
-        {
-            twoErrorLabel.Text = "Верно!";
-            twoErrorLabel.TextColor = Colors.Green;
-        }
-        else if (twoAnswerEntry.Text == "sam")
+        if (twoAnswerEntry.Text == "3")
         {
             twoErrorLabel.Text = "Верно!";
             twoErrorLabel.TextColor = Colors.Green;
@@ -223,18 +218,20 @@ public partial class CSharpCycles : ContentPage
                 font-size: 16px;
                 text-align: justify;
                 padding: 10px;
+                color:#ACACAC;
             }
         </style>
         </head>
         <body>
-            <p>Что выведет следующий код:<br>
-            string name = ""Tom"";<br>
-            Console.WriteLine(Name);</p>
-             <ol>
-                 <li>не скомпилируется</li>
-                 <li>Tom</li>
-                 <li>Name</li>
-             </ol> 
+            <p>Сколько раз в этом цикле будет выполняться строка j = j - 1:<br><br>int j = 2;<br>
+            for (int i = 1; i < 100; i = i + 2)<br>
+            {<br>
+                j = j - 1;<br>
+                while(j < 15)<br>
+                {<br>
+                    j = j + 5;<br>
+                }<br>
+            }</p>
         </body>
         </html>";
 
@@ -245,7 +242,7 @@ public partial class CSharpCycles : ContentPage
     }
     private void ThreeAnswerButton(object sender, EventArgs e)
     {
-        if (threeAnswerEntry.Text == "1")
+        if (threeAnswerEntry.Text == "50")
         {
             threeErrorLabel.Text = "Верно!";
             threeErrorLabel.TextColor = Colors.Green;

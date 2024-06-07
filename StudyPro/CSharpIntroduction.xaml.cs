@@ -20,6 +20,7 @@ public partial class CSharpIntroduction : ContentPage
                 font-size: 16px;
                 text-align: justify;
                 padding: 10px;
+                color:#ACACAC;
             }
         </style>
         </head>

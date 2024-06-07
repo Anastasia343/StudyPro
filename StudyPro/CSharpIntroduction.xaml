@@ -5,11 +5,11 @@
              Title="Структура программы">
     <ScrollView>
         <StackLayout BackgroundColor="#282828">
-            <Label Text="Видеоурок" HorizontalOptions="Center" TextColor="Black"/>
+            <Label Text="Видеоурок" HorizontalOptions="Center" TextColor="#ACACAC" Margin="70, 20, 70, 20"/>
             <WebView x:Name="youtubeWebView" Source="https://www.youtube.com/embed/JTn3m-8eMx4?si=nJKjdbdwCsPj4KU7" WidthRequest="400" HeightRequest="190" MinimumWidthRequest="400" MinimumHeightRequest="190"/>
-            <Label Text="теоретический материал" HorizontalOptions="Center" TextColor="Black"/>
-            <WebView x:Name="textWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="завершить" TextColor="Black" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="OnOpenCSarpCliked"/>
+            <Label Text="теоретический материал" HorizontalOptions="Center" TextColor="#ACACAC" Margin="0, 20, 0, 0"/>
+            <WebView x:Name="textWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#282828" WidthRequest="400" HeightRequest="1270" MinimumWidthRequest="400" MinimumHeightRequest="2050"/>
+            <Button Text="завершить" TextColor="Black" BackgroundColor="#ac99ea" HorizontalOptions="Center" Clicked="OnOpenCSarpCliked" Margin="0, 40, 0, 0"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>
