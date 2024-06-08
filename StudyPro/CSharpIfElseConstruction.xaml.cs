@@ -9,6 +9,7 @@ public partial class CSharpIfElseConstruction : ContentPage
         OneAnswerWebView();
         TwoAnswerWebView();
         ThreeAnswerWebView();
+        
     }
     private void TextWebView()
     {
@@ -83,11 +84,18 @@ public partial class CSharpIfElseConstruction : ContentPage
             Html = html
         };
     }
+    
     private async void OnOpenCSarpCliked(object sender, EventArgs e)
     {
-        var cSharp = new CSharp();
-        await Navigation.PushAsync(cSharp);
-        Navigation.RemovePage(this);
+        if (one + two + three == 3) 
+        {
+            var cSharp = new CSharp();
+            await Navigation.PushAsync(cSharp);
+            Navigation.RemovePage(this);
+            GlobalState.labelCSharp.Text = "90%";
+        }
+        else
+            await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");
     }
     private void OneAnswerWebView()
     {
@@ -125,27 +133,32 @@ public partial class CSharpIfElseConstruction : ContentPage
             Html = html
         };
     }
+    int one = 0;
     private void OneAnswerButton(object sender, EventArgs e)
     {
         if (oneAnswerEntry.Text == "age>17")
         {
             oneErrorLabel.Text = "Верно!";
             oneErrorLabel.TextColor = Colors.Green;
+            ++one;
         }
         else if (oneAnswerEntry.Text == "age > 17")
         {
             oneErrorLabel.Text = "Верно!";
             oneErrorLabel.TextColor = Colors.Green;
+            ++one;
         }
         else if (oneAnswerEntry.Text == "age >=18")
         {
             oneErrorLabel.Text = "Верно!";
             oneErrorLabel.TextColor = Colors.Green;
+            ++one;
         }
         else if (oneAnswerEntry.Text == "age >= 18")
         {
             oneErrorLabel.Text = "Верно!";
             oneErrorLabel.TextColor = Colors.Green;
+            ++one;
         }
         else
         {
@@ -185,17 +198,20 @@ public partial class CSharpIfElseConstruction : ContentPage
             Html = html
         };
     }
+    int two = 0;
     private void TwoAnswerButton(object sender, EventArgs e)
     {
         if (twoAnswerEntry.Text == "(name = \"Tom\")")
         {
             twoErrorLabel.Text = "Верно!";
             twoErrorLabel.TextColor = Colors.Green;
+            ++two;
         }
         else if (twoAnswerEntry.Text == "(name=\"Tom\")")
         {
             twoErrorLabel.Text = "Верно!";
             twoErrorLabel.TextColor = Colors.Green;
+            ++two;
         }
         else
         {
@@ -239,12 +255,14 @@ public partial class CSharpIfElseConstruction : ContentPage
             Html = html
         };
     }
+    int three = 0;
     private void ThreeAnswerButton(object sender, EventArgs e)
     {
         if (threeAnswerEntry.Text == "2")
         {
             threeErrorLabel.Text = "Верно!";
             threeErrorLabel.TextColor = Colors.Green;
+            ++three;
         }
         else
         {

@@ -67,5 +67,7 @@ public partial class CSharpIntroduction : ContentPage
         var cSharp = new CSharp();
         await Navigation.PushAsync(cSharp);
         Navigation.RemovePage(this);
+        //GlobalState.buttonCSharp.BackgroundColor = Colors.LightGrey;
+        GlobalState.labelCSharp.Text = "10%";
     }
 }

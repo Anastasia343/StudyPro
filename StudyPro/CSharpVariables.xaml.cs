@@ -1,3 +1,5 @@
+using Microsoft.Maui.Controls;
+
 namespace StudyPro;
 
 public partial class CSharpVariables : ContentPage
@@ -72,9 +74,13 @@ public partial class CSharpVariables : ContentPage
     }
     private async void OnOpenCSarpCliked(object sender, EventArgs e)
     {
-        var cSharp = new CSharp();
-        await Navigation.PushAsync(cSharp);
-        Navigation.RemovePage(this);
+        if (one + two + three == 3)
+        {
+            var cSharp = new CSharp();
+            await Navigation.PushAsync(cSharp);
+            Navigation.RemovePage(this);
+            GlobalState.labelCSharp.Text = "20%";
+        }
     }
     private void OneAnswerWebView()
     {
@@ -107,22 +113,26 @@ public partial class CSharpVariables : ContentPage
             Html = html
         };
     }
+    int one = 0;
     private void OneAnswerButton (object sender, EventArgs e) 
     {
         if (oneAnswerEntry.Text == "13")
         {
             oneErrorLabel.Text = "Верно!";
             oneErrorLabel.TextColor = Colors.Green;
+            ++one;
         }
         else if (oneAnswerEntry.Text == "1 3")
         {
             oneErrorLabel.Text = "Верно!";
             oneErrorLabel.TextColor = Colors.Green;
+            ++one;
         }
         else if (oneAnswerEntry.Text == "1,3") 
         {
             oneErrorLabel.Text = "Верно!";
             oneErrorLabel.TextColor = Colors.Green;
+            ++one;
         }
         else
         {
@@ -163,17 +173,20 @@ public partial class CSharpVariables : ContentPage
             Html = html
         };
     }
+    int two = 0;
     private void TwoAnswerButton (object sender, EventArgs e)
     {
         if (twoAnswerEntry.Text == "Sam")
         {
             twoErrorLabel.Text = "Верно!";
             twoErrorLabel.TextColor = Colors.Green;
+            ++two;
         }
         else if (twoAnswerEntry.Text == "sam") 
         {
             twoErrorLabel.Text = "Верно!";
             twoErrorLabel.TextColor = Colors.Green;
+            ++two;
         }
         else
         {
@@ -213,12 +226,14 @@ public partial class CSharpVariables : ContentPage
             Html = html
         };
     }
+    int three = 0;
     private void ThreeAnswerButton(object sender, EventArgs e)
     {
         if (threeAnswerEntry.Text == "1")
         {
             threeErrorLabel.Text = "Верно!";
             threeErrorLabel.TextColor = Colors.Green;
+            ++three;
         }
         else
         {
