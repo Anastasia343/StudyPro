@@ -67,6 +67,5 @@ public partial class CSharpIntroduction : ContentPage
         Navigation.RemovePage(this);
         GlobalState.LabelCSharp.Text = "10%";
         GlobalState.RestartButtonOne.BackgroundColor = Color.FromRgb(172, 153, 234);
-        //Color.FromRgb(172, 153, 234)
     }
 }

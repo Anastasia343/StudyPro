@@ -69,6 +69,7 @@ public partial class CSharpConditionalExpressions : ContentPage
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
             GlobalState.LabelCSharp.Text = "80%";
+            GlobalState.RestartButtonElght.BackgroundColor = Color.FromRgb(172, 153, 234);
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

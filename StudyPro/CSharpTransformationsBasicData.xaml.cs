@@ -86,6 +86,7 @@ public partial class CSharpTransformationsBasicData : ContentPage
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
             GlobalState.LabelCSharp.Text = "70%";
+            GlobalState.RestartButtonSeven.BackgroundColor = Color.FromRgb(172, 153, 234);
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

@@ -80,6 +80,7 @@ public partial class CSharpVariables : ContentPage
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
             GlobalState.LabelCSharp.Text = "20%";
+            GlobalState.RestartButtonTwo.BackgroundColor = Color.FromRgb(172, 153, 234);
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");
@@ -162,11 +163,6 @@ public partial class CSharpVariables : ContentPage
             <p>Что выведет на консоль следующий код:<br>string person = ""Tom"";<br>
             person = ""Sam"";<br>
             Console.WriteLine(person);</p>
-            <ol>
-                 <li>Tom</li>
-                 <li>Sam</li>
-                 <li>person</li>
-             </ol>
         </body>
         </html>";
 
