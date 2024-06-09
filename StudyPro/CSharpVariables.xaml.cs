@@ -81,6 +81,8 @@ public partial class CSharpVariables : ContentPage
             Navigation.RemovePage(this);
             GlobalState.labelCSharp.Text = "20%";
         }
+        else
+            await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");
     }
     private void OneAnswerWebView()
     {

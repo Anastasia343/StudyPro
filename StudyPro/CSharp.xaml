@@ -16,7 +16,6 @@
         <Button x:Name="restartButtonSeven" Text="Урок 7. Условные выражения" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickElght" Margin="10, 0, 10, 10"/>
         <Button x:Name="restartButtonElght" Text="Урок 8. Конструкция if/else и тернарная операция" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickNine" Margin="10, 0, 10, 10"/>
         <Button x:Name="restartButtonNine" Text="Урок 9. Циклы" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickTen" Margin="10, 0, 10, 10"/>
-        <!--<Button Text="⟳" FontSize="30" TextColor="Black" BackgroundColor="#ac99ea" HeightRequest="60" WidthRequest="55" />-->
-        <!--Clicked="ButtonClickRestart"-->
+        <!--<Button Text="⟳" FontSize="30" TextColor="Black" BackgroundColor="#ac99ea" HeightRequest="60" WidthRequest="55" Clicked="ButtonClickRestart/>-->
     </StackLayout>
 </ContentPage>

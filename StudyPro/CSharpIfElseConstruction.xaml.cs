@@ -9,7 +9,6 @@ public partial class CSharpIfElseConstruction : ContentPage
         OneAnswerWebView();
         TwoAnswerWebView();
         ThreeAnswerWebView();
-        
     }
     private void TextWebView()
     {
