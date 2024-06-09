@@ -64,7 +64,7 @@ public partial class CSharpBitwiseOperations : ContentPage
             var cSharp = new CSharp();
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.labelCSharp.Text = "50%";
+            GlobalState.LabelCSharp.Text = "50%";
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

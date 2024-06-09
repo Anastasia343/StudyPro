@@ -1,5 +1,3 @@
-
-
 namespace StudyPro;
 
 public partial class CSharpIntroduction : ContentPage
@@ -67,7 +65,8 @@ public partial class CSharpIntroduction : ContentPage
         var cSharp = new CSharp();
         await Navigation.PushAsync(cSharp);
         Navigation.RemovePage(this);
-        //GlobalState.buttonCSharp.BackgroundColor = Colors.LightGrey;
-        GlobalState.labelCSharp.Text = "10%";
+        GlobalState.LabelCSharp.Text = "10%";
+        GlobalState.RestartButtonOne.BackgroundColor = Color.FromRgb(172, 153, 234);
+        //Color.FromRgb(172, 153, 234)
     }
 }

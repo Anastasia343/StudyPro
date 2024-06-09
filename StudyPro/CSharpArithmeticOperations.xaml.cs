@@ -224,7 +224,7 @@ public partial class CSharpArithmeticOperations : ContentPage
             var cSharp = new CSharp();
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.labelCSharp.Text = "40%";
+            GlobalState.LabelCSharp.Text = "40%";
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

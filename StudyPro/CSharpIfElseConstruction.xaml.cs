@@ -91,7 +91,7 @@ public partial class CSharpIfElseConstruction : ContentPage
             var cSharp = new CSharp();
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.labelCSharp.Text = "90%";
+            GlobalState.LabelCSharp.Text = "90%";
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

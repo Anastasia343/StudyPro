@@ -68,7 +68,7 @@ public partial class CSharpConditionalExpressions : ContentPage
             var cSharp = new CSharp();
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.labelCSharp.Text = "80%";
+            GlobalState.LabelCSharp.Text = "80%";
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

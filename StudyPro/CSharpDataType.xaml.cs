@@ -84,7 +84,7 @@ public partial class CSharpDataType : ContentPage
             var cSharp = new CSharp();
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.labelCSharp.Text = "30%";
+            GlobalState.LabelCSharp.Text = "30%";
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

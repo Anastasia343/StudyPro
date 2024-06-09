@@ -85,7 +85,7 @@ public partial class CSharpTransformationsBasicData : ContentPage
             var cSharp = new CSharp();
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.labelCSharp.Text = "70%";
+            GlobalState.LabelCSharp.Text = "70%";
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");
