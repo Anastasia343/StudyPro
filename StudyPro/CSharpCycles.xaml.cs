@@ -113,7 +113,7 @@ public partial class CSharpCycles : ContentPage
             var cSharp = new CSharp();
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.LabelCSharp.Text = "100%";
+            GlobalState.LabelCSharp = "100%";
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

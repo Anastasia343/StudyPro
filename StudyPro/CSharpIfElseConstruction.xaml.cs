@@ -91,7 +91,7 @@ public partial class CSharpIfElseConstruction : ContentPage
             var cSharp = new CSharp();
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.LabelCSharp.Text = "90%";
+            GlobalState.LabelCSharp = "90%";
             GlobalState.RestartButtonNine.BackgroundColor = Color.FromRgb(172, 153, 234);
         }
         else

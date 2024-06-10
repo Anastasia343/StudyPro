@@ -1,13 +1,13 @@
 
-
 namespace StudyPro;
 
 public partial class CSharp : ContentPage
 {
+    const string LabelKey = "SavedLabel";
     public CSharp()
     {
         InitializeComponent();
-        GlobalState.LabelCSharp = result;
+        //GlobalState.LabelCSharp = result;
         GlobalState.RestartButtonOne = restartButtonOne;
         GlobalState.RestartButtonTwo = restartButtonTwo;
         GlobalState.RestartButtonThree = restartButtonThree;
@@ -17,11 +17,20 @@ public partial class CSharp : ContentPage
         GlobalState.RestartButtonSeven = restartButtonSeven;
         GlobalState.RestartButtonElght = restartButtonElght;
         GlobalState.RestartButtonNine = restartButtonNine;
+        GlobalState.LabelCSharp = Preferences.Get(LabelKey, GlobalState.LabelCSharp);
+        result.Text = GlobalState.LabelCSharp;
+    }
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        result.Text = GlobalState.LabelCSharp;
     }
     //структура программы 10
     private async void ButtonClickOne(object senter, EventArgs e)
-    { 
-         await Navigation.PushAsync(new CSharpIntroduction());
+    {
+        GlobalState.LabelCSharp = result.Text;
+        Preferences.Set(LabelKey, GlobalState.LabelCSharp);
+        await Navigation.PushAsync(new CSharpIntroduction());
     }
     //переменные и константы 20  restartButtonOne.BackgroundColor == Color.FromHsv(254, 35, 92)
     private async void ButtonClickTwo(object senter, EventArgs e)
@@ -29,6 +38,8 @@ public partial class CSharp : ContentPage
         var exepectedColorOne = Color.FromRgb(172, 153, 234);
         if (GlobalState.RestartButtonOne.BackgroundColor.ToArgbHex() == exepectedColorOne.ToArgbHex())
         {
+            GlobalState.LabelCSharp = result.Text;
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
             await Navigation.PushAsync(new CSharpVariables());
         }
         else
@@ -40,6 +51,8 @@ public partial class CSharp : ContentPage
         var exepectedColorTwo = Color.FromRgb(172, 153, 234);
         if (GlobalState.RestartButtonTwo.BackgroundColor.ToArgbHex() == exepectedColorTwo.ToArgbHex())
         {
+            GlobalState.LabelCSharp = result.Text;
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
             await Navigation.PushAsync(new CSharpDataType());
         }
         else
@@ -51,6 +64,8 @@ public partial class CSharp : ContentPage
         var exepectedColorThree = Color.FromRgb(172, 153, 234);
         if (GlobalState.RestartButtonThree.BackgroundColor.ToArgbHex() == exepectedColorThree.ToArgbHex())
         {
+            GlobalState.LabelCSharp = result.Text;
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
             await Navigation.PushAsync(new CSharpArithmeticOperations());
         }
         else
@@ -62,6 +77,8 @@ public partial class CSharp : ContentPage
         var exepectedColorFour = Color.FromRgb(172, 153, 234);
         if (GlobalState.RestartButtonFour.BackgroundColor.ToArgbHex() == exepectedColorFour.ToArgbHex())
         {
+            GlobalState.LabelCSharp = result.Text;
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
             await Navigation.PushAsync(new CSharpBitwiseOperations());
         }
         else
@@ -73,6 +90,8 @@ public partial class CSharp : ContentPage
         var exepectedColorFive = Color.FromRgb(172, 153, 234);
         if (GlobalState.RestartButtonFive.BackgroundColor.ToArgbHex() == exepectedColorFive.ToArgbHex())
         {
+            GlobalState.LabelCSharp = result.Text;
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
             await Navigation.PushAsync(new CSharpAssignmentOperations());
         }
         else
@@ -84,6 +103,8 @@ public partial class CSharp : ContentPage
         var exepectedColorSix = Color.FromRgb(172, 153, 234);
         if (GlobalState.RestartButtonSix.BackgroundColor.ToArgbHex() == exepectedColorSix.ToArgbHex())
         {
+            GlobalState.LabelCSharp = result.Text;
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
             await Navigation.PushAsync(new CSharpTransformationsBasicData());
         }
         else
@@ -95,6 +116,8 @@ public partial class CSharp : ContentPage
         var exepectedColorSeven = Color.FromRgb(172, 153, 234);
         if (GlobalState.RestartButtonSeven.BackgroundColor.ToArgbHex() == exepectedColorSeven.ToArgbHex())
         {
+            GlobalState.LabelCSharp = result.Text;
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
             await Navigation.PushAsync(new CSharpConditionalExpressions());
         }
         else
@@ -106,6 +129,8 @@ public partial class CSharp : ContentPage
         var exepectedColorElght = Color.FromRgb(172, 153, 234);
         if (GlobalState.RestartButtonElght.BackgroundColor.ToArgbHex() == exepectedColorElght.ToArgbHex())
         {
+            GlobalState.LabelCSharp = result.Text;
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
             await Navigation.PushAsync(new CSharpIfElseConstruction());
         }
         else
@@ -117,6 +142,8 @@ public partial class CSharp : ContentPage
         var exepectedColorNine = Color.FromRgb(172, 153, 234);
         if (GlobalState.RestartButtonNine.BackgroundColor.ToArgbHex() == exepectedColorNine.ToArgbHex())
         {
+            GlobalState.LabelCSharp = result.Text;
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
             await Navigation.PushAsync(new CSharpCycles());
         }
         else
@@ -137,6 +164,9 @@ public partial class CSharp : ContentPage
             restartButtonSeven.BackgroundColor = Colors.Gray;
             restartButtonElght.BackgroundColor = Colors.Gray;
             restartButtonNine.BackgroundColor = Colors.Gray;
+            Preferences.Remove(LabelKey);
+            GlobalState.LabelCSharp = "";
+            result.Text = GlobalState.LabelCSharp;
         }
     }
 }

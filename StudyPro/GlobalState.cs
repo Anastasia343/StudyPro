@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudyPro
 {
-    internal class GlobalState
+    public class GlobalState
     {
         public static Button RestartButtonOne { get; set; }
         public static Button RestartButtonTwo { get; set; }
@@ -17,7 +17,8 @@ namespace StudyPro
         public static Button RestartButtonSeven { get; set; }
         public static Button RestartButtonElght { get; set; }
         public static Button RestartButtonNine { get; set; }
-        public static Label LabelCSharp { get; set; }
+        public static string LabelCSharp { get; set; } = "Default Text";
     }
+
     
 }

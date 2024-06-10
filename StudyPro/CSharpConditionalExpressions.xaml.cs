@@ -68,7 +68,7 @@ public partial class CSharpConditionalExpressions : ContentPage
             var cSharp = new CSharp();
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.LabelCSharp.Text = "80%";
+            GlobalState.LabelCSharp = "80%";
             GlobalState.RestartButtonElght.BackgroundColor = Color.FromRgb(172, 153, 234);
         }
         else

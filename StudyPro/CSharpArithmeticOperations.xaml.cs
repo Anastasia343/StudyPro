@@ -224,7 +224,7 @@ public partial class CSharpArithmeticOperations : ContentPage
             var cSharp = new CSharp();
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.LabelCSharp.Text = "40%";
+            GlobalState.LabelCSharp = "40%";
             GlobalState.RestartButtonFour.BackgroundColor = Color.FromRgb(172, 153, 234);
         }
         else
