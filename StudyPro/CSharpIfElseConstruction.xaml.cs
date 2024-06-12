@@ -2,7 +2,8 @@ namespace StudyPro;
 
 public partial class CSharpIfElseConstruction : ContentPage
 {
-	public CSharpIfElseConstruction()
+    const string LabelKey = "SavedLabel";
+    public CSharpIfElseConstruction()
 	{
 		InitializeComponent();
         TextWebView();
@@ -89,10 +90,11 @@ public partial class CSharpIfElseConstruction : ContentPage
         if (one + two + three == 3) 
         {
             var cSharp = new CSharp();
+            GlobalState.LabelCSharp = "90%";
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
+            GlobalState.RestartButtonNine.BackgroundColor = Color.FromRgb(172, 153, 234);
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.LabelCSharp = "90%";
-            GlobalState.RestartButtonNine.BackgroundColor = Color.FromRgb(172, 153, 234);
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

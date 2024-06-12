@@ -4,7 +4,8 @@ namespace StudyPro;
 
 public partial class CSharpAssignmentOperations : ContentPage
 {
-	public CSharpAssignmentOperations()
+    const string LabelKey = "SavedLabel";
+    public CSharpAssignmentOperations()
 	{
 		InitializeComponent();
         TextWebView();
@@ -76,10 +77,11 @@ public partial class CSharpAssignmentOperations : ContentPage
         if (one + two + three == 3)
         {
             var cSharp = new CSharp();
+            GlobalState.LabelCSharp = "60%";
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
+            GlobalState.RestartButtonSix.BackgroundColor = Color.FromRgb(172, 153, 234);
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.LabelCSharp = "60%";
-            GlobalState.RestartButtonSix.BackgroundColor = Color.FromRgb(172, 153, 234);
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

@@ -4,7 +4,8 @@ namespace StudyPro;
 
 public partial class CSharpConditionalExpressions : ContentPage
 {
-	public CSharpConditionalExpressions()
+    const string LabelKey = "SavedLabel";
+    public CSharpConditionalExpressions()
 	{
 		InitializeComponent();
         TextWebView();
@@ -66,10 +67,11 @@ public partial class CSharpConditionalExpressions : ContentPage
         if (one + two + three == 3)
         {
             var cSharp = new CSharp();
+            GlobalState.LabelCSharp = "80%";
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
+            GlobalState.RestartButtonElght.BackgroundColor = Color.FromRgb(172, 153, 234);
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.LabelCSharp = "80%";
-            GlobalState.RestartButtonElght.BackgroundColor = Color.FromRgb(172, 153, 234);
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

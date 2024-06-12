@@ -4,7 +4,8 @@ namespace StudyPro;
 
 public partial class CSharpCycles : ContentPage
 {
-	public CSharpCycles()
+    const string LabelKey = "SavedLabel";
+    public CSharpCycles()
 	{
 		InitializeComponent();
         TextWebView();
@@ -111,9 +112,10 @@ public partial class CSharpCycles : ContentPage
         if (one + two + three == 3)
         {
             var cSharp = new CSharp();
+            GlobalState.LabelCSharp = "100%";
+            Preferences.Set(LabelKey, GlobalState.LabelCSharp);
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
-            GlobalState.LabelCSharp = "100%";
         }
         else
             await DisplayAlert("Не доступно", "Есть не правильно решенные задания", "ок");

@@ -1,8 +1,11 @@
+using System.Windows.Input;
+
 namespace StudyPro;
 
 public partial class CSharpIntroduction : ContentPage
 {
-	public CSharpIntroduction()
+    const string LabelKey = "SavedLabel";
+    public CSharpIntroduction()
 	{
 		InitializeComponent();
         TextWebView();
@@ -63,12 +66,10 @@ public partial class CSharpIntroduction : ContentPage
     private async void OnOpenCSarpCliked(object sender, EventArgs e)
     {
         var cSharp = new CSharp();
-        await Navigation.PushAsync(cSharp);
-        
-        GlobalState.RestartButtonOne.BackgroundColor = Color.FromRgb(172, 153, 234);
+        GlobalState.SetButtonOne(GlobalState.RestartButtonOne, Color.FromRgb(172, 153, 234));
         GlobalState.LabelCSharp = "10%";
+        Preferences.Set(LabelKey, GlobalState.LabelCSharp);
+        await Navigation.PushAsync(cSharp);
         Navigation.RemovePage(this);
-        
-        
     }
 }

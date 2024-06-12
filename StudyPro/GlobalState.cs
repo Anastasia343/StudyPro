@@ -9,6 +9,22 @@ namespace StudyPro
     public class GlobalState
     {
         public static Button RestartButtonOne { get; set; }
+        public static void SetButtonOne(Button button, Color color)
+        {
+            button.BackgroundColor = color;
+            SaveButtoColor(color);
+        }
+        public static void SaveButtoColor(Color color)
+        {
+            var colorString = $"{color}";
+            Preferences.Set("RestartButtonColor", colorString);
+        }
+        public static Color LoadButtonColor() 
+        {
+            var colorString = Preferences.Get("RestartButtonColor", "172, 153, 234");
+            var colorParts = colorString.Split(',');
+            return Color.FromArgb(colorParts[0]);
+        }
         public static Button RestartButtonTwo { get; set; }
         public static Button RestartButtonThree { get; set; }
         public static Button RestartButtonFour { get; set; }

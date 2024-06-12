@@ -7,15 +7,15 @@
         <Label Text="Ваш результат:" TextColor="#ACACAC"/>
         <Label x:Name="result" Text="" TextColor="#ACACAC"/>
         <Button Text="Введение. Структура программы" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickOne" Margin="10, 20, 10, 10" />
-        <Button x:Name="restartButtonOne" Text="Урок 1. Переменные и константы" TextColor="Black" BackgroundColor="Gray" Clicked="ButtonClickTwo" Margin="10, 0, 10, 10" />
-        <Button x:Name="restartButtonTwo" Text="Урок 2. Литералы и Типы данных" TextColor="Black" BackgroundColor="Gray" Clicked="ButtonClickThree" Margin="10, 0, 10, 10" />
-        <Button x:Name="restartButtonThree" Text="Урок 3. Арифметические операции" TextColor="Black" BackgroundColor="Gray" Clicked="ButtonClickFour" Margin="10, 0, 10, 10" />
-        <Button x:Name="restartButtonFour" Text="Урок 4. Подразрядные операции" TextColor="Black" BackgroundColor="Gray" Clicked="ButtonClickFive" Margin="10, 0, 10, 10" />
-        <Button x:Name="restartButtonFive" Text="Урок 5. Операции присваивания" TextColor="Black" BackgroundColor="Gray" Clicked="ButtonClickSix" Margin="10, 0, 10, 10"/>
-        <Button x:Name="restartButtonSix" Text="Урок 6. Преобразования базовых типов данных" TextColor="Black" BackgroundColor="Gray" Clicked="ButtonClickSeven" Margin="10, 0, 10, 10" />
-        <Button x:Name="restartButtonSeven" Text="Урок 7. Условные выражения" TextColor="Black" BackgroundColor="Gray" Clicked="ButtonClickElght" Margin="10, 0, 10, 10" />
-        <Button x:Name="restartButtonElght" Text="Урок 8. Конструкция if/else и тернарная операция" TextColor="Black" BackgroundColor="Gray" Clicked="ButtonClickNine" Margin="10, 0, 10, 10" />
-        <Button x:Name="restartButtonNine" Text="Урок 9. Циклы" TextColor="Black" BackgroundColor="Gray" Clicked="ButtonClickTen" Margin="10, 0, 10, 10" />
+        <Button x:Name="restartButtonOne" Text="Урок 1. Переменные и константы" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickTwo" Margin="10, 0, 10, 10" />
+        <Button x:Name="restartButtonTwo" Text="Урок 2. Литералы и Типы данных" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickThree" Margin="10, 0, 10, 10" />
+        <Button x:Name="restartButtonThree" Text="Урок 3. Арифметические операции" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickFour" Margin="10, 0, 10, 10" />
+        <Button x:Name="restartButtonFour" Text="Урок 4. Подразрядные операции" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickFive" Margin="10, 0, 10, 10" />
+        <Button x:Name="restartButtonFive" Text="Урок 5. Операции присваивания" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickSix" Margin="10, 0, 10, 10"/>
+        <Button x:Name="restartButtonSix" Text="Урок 6. Преобразования базовых типов данных" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickSeven" Margin="10, 0, 10, 10" />
+        <Button x:Name="restartButtonSeven" Text="Урок 7. Условные выражения" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickElght" Margin="10, 0, 10, 10" />
+        <Button x:Name="restartButtonElght" Text="Урок 8. Конструкция if/else и тернарная операция" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickNine" Margin="10, 0, 10, 10" />
+        <Button x:Name="restartButtonNine" Text="Урок 9. Циклы" TextColor="Black" BackgroundColor="#ac99ea" Clicked="ButtonClickTen" Margin="10, 0, 10, 10" />
         <Button Text="⟳" FontSize="30" TextColor="Black" BackgroundColor="#ac99ea" HeightRequest="60" WidthRequest="55" Clicked="ButtonClickRestart"/>
     </StackLayout>
 </ContentPage>
