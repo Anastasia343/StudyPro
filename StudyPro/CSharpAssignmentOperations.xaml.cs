@@ -79,7 +79,7 @@ public partial class CSharpAssignmentOperations : ContentPage
             var cSharp = new CSharp();
             GlobalState.LabelCSharp = "60%";
             Preferences.Set(LabelKey, GlobalState.LabelCSharp);
-            GlobalState.RestartButtonSix.BackgroundColor = Color.FromRgb(172, 153, 234);
+            GlobalState.RestartButtonColorSix = Color.FromRgb(172, 153, 234);
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
         }

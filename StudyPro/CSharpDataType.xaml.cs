@@ -85,7 +85,7 @@ public partial class CSharpDataType : ContentPage
             var cSharp = new CSharp();
             GlobalState.LabelCSharp = "30%";
             Preferences.Set(LabelKey, GlobalState.LabelCSharp);
-            GlobalState.RestartButtonThree.BackgroundColor = Color.FromRgb(172, 153, 234);
+            GlobalState.RestartButtonColorThree = Color.FromRgb(172, 153, 234);
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
         }

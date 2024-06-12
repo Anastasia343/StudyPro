@@ -73,6 +73,10 @@ public partial class CSharpVariables : ContentPage
             Html = html
         };
     }
+    //void SaveButton(Color color)
+    //{
+    //    Preferences.Set("ButtonBackgroundColor", color.ToHex());
+    //}
     private async void OnOpenCSarpCliked(object sender, EventArgs e)
     {
         if (one + two + three == 3)
@@ -80,7 +84,7 @@ public partial class CSharpVariables : ContentPage
             var cSharp = new CSharp();
             GlobalState.LabelCSharp = "20%";
             Preferences.Set(LabelKey, GlobalState.LabelCSharp);
-            GlobalState.RestartButtonTwo.BackgroundColor = Color.FromRgb(172, 153, 234);
+            GlobalState.RestartButtonColorTwo = Color.FromRgb(172, 153, 234);
             await Navigation.PushAsync(cSharp);
             Navigation.RemovePage(this);
         }

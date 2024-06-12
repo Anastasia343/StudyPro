@@ -66,7 +66,7 @@ public partial class CSharpIntroduction : ContentPage
     private async void OnOpenCSarpCliked(object sender, EventArgs e)
     {
         var cSharp = new CSharp();
-        GlobalState.SetButtonOne(GlobalState.RestartButtonOne, Color.FromRgb(172, 153, 234));
+        GlobalState.RestartButtonColorOne = Color.FromRgb(172, 153, 234);
         GlobalState.LabelCSharp = "10%";
         Preferences.Set(LabelKey, GlobalState.LabelCSharp);
         await Navigation.PushAsync(cSharp);
